@@ -15,7 +15,7 @@ export default class GameScene extends BaseScene{
 
         new GroundController({environment: this.environment}, 'https://danielpatrickkoenig.github.io/spirit-of-kovak/dist/dirt_row.png');
 
-        this.ball = new GolfBallController({environment: this.environment}, 'https://danielpatrickkoenig.github.io/shared-app-resources/golf-ball-1.glb');
+        this.ball = new GolfBallController({environment: this.environment});
 
         this.environment.cameraContainer.position.y = 4;
         this.environment.cameraContainer.position.z = 4;

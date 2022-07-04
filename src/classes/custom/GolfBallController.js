@@ -2,8 +2,8 @@ import CustomMeshController from '../controllers/CustomMeshController';
 import CANNON from 'cannon';
 import * as THREE from 'three';
 export default class GolfBallController extends CustomMeshController{
-    constructor(data, file){
-        super(data, file);
+    constructor(data){
+        super(data, 'https://danielpatrickkoenig.github.io/shared-app-resources/golf-ball-1.glb');
         this.ball = null;
     }
     modelLoaded(model){
