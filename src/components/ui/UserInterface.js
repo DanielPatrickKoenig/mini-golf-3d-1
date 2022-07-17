@@ -5,7 +5,7 @@ const UserInterface = ({scene}) => {
     }
     scene.setActionHandler(processAction);
     const clicked = () => {
-        scene.ball.moveBall();
+        scene.ballController.moveBall();
     };
     return (
         <div>

@@ -112,4 +112,8 @@ function getCollisions(mesh, collidableMeshList){
 function getDistance(a, b){
     return  new THREE.Vector3(a.x, a.y, a.z).distanceTo(new THREE.Vector3(b.x, b.y, b.z));
 }
-export {setRotation, RotationAxis, getRaycastIntersections, object3DSelector, createPrimitive, getCollisions, getDistance}
+function basicImageMaterial(texture){
+    const tex = new THREE.TextureLoader().load(texture);
+    return new THREE.MeshBasicMaterial( { map: tex } );
+}
+export {setRotation, RotationAxis, getRaycastIntersections, object3DSelector, createPrimitive, getCollisions, getDistance, basicImageMaterial}
