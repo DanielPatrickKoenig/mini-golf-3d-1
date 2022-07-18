@@ -58,8 +58,8 @@ export default class POVManager{
                 this.camera.rotation.x = degreesToRadians(-20);
                 this.distanceToPlayer = 60;
                 this.camera.rotation.y = degreesToRadians(-20);
-                this.camera.position.x = jt.orbit(this.player.position.x, this.distanceToPlayer, 180 + 20, jt.OrbitType.COS);
-                this.camera.position.z = jt.orbit(this.player.position.z, this.distanceToPlayer, 180 + 20, jt.OrbitType.SIN);
+                this.camera.position.x = jt.orbit(this.player.position.x, this.distanceToPlayer, 180, jt.OrbitType.COS);
+                this.camera.position.z = jt.orbit(this.player.position.z, this.distanceToPlayer, 180, jt.OrbitType.SIN);
                 this.camera.position.y = this.player.position.y + 30;
                 // this.camera.rotation.y = degreesToRadians(jt.angle({x: this.camera.position.x, y: this.camera.position.z}, {x: this.player.position.x, y: this.player.position.z})) * -1;
                 break;
